@@ -45,6 +45,12 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.14.2</version>
         </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-resolver-dns-native-macos</artifactId>
+            <version>4.1.91.Final</version>
+            <classifier>osx-x86_64</classifier>
+        </dependency>
 
         <!-- Test dependencies -->
         <dependency>
@@ -57,20 +63,6 @@
             <artifactId>vertx-junit5</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-resolver-dns-native-macos</artifactId>
-            <version>4.1.91.Final</version>
-            <classifier>osx-x86_64</classifier>
-            <scope>test</scope>
-        </dependency>
-
-        <!--        <dependency>-->
-<!--            <groupId>org.junit.jupiter</groupId>-->
-<!--            <artifactId>junit-jupiter-engine</artifactId>-->
-<!--            <version>${junit-jupiter.version}</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
     </dependencies>
 
     <build>
